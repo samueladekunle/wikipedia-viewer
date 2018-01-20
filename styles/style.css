@@ -1,0 +1,71 @@
+#wiki-form-container {
+	width: 300px;
+	margin: 0 auto;
+
+	position: relative;
+	top: 200px;
+
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+@keyframes move-wiki-form-up {
+	from {
+		top: 200px;
+	}
+	to {
+		top: 20px;
+	}
+}
+
+@keyframes move-wiki-form-down {
+	from {
+		top: 20px;
+	}
+	to {
+		top: 200px;
+	}
+}
+
+#wiki-cards-container {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.wiki-card__avatar {
+	position: absolute;
+	background: #bdbdbd;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+}
+
+.wiki-card .mdc-card__title {
+	margin-left: 56px;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+.wiki-card .mdc-card__supporting-text {
+	text-align: justify;
+}
+
+.wiki-card .mdc-button {
+	display:block;
+
+	position: relative;
+	left: 175px;
+}
+
+@media (min-width: 1024px) {
+	#wiki-cards-container {
+		width:450px;
+	}
+
+	.wiki-card .mdc-button {
+		left: 325px;
+	}
+}

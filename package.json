@@ -1,0 +1,33 @@
+{
+  "name": "wikipedia-viewer",
+  "version": "0.1.0",
+  "description": "A Wikipedia viewer",
+  "author": "Samuel Adekunle",
+  "repository": {
+  	"type": "git",
+  	"url": "https://www.github.com/samueladekunle/wikipedia-viewer"
+  },
+  "scripts": {
+  	"build": "webpack",
+  	"start": "webpack-dev-server --open"
+  },
+  "dependencies": {
+    "jsonp": "^0.2.1",
+    "material-components-web": "^0.28.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "engines": {
+  	"node": "9.3.0",
+  	"npm": "5.5.1",
+  	"yarn": "0.27.5"
+  },
+  "license": "MIT",
+  "keywords": [
+    	"Wikipedia",
+    	"wikipedia-viewer",
+    	"freeCodeCamp"
+  ]
+}
