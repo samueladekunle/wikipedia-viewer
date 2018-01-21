@@ -45,8 +45,6 @@ const performJSONP = (query) => {
 			// Empty the wikiCardsList array.
 			wikiCardsList=[];
 
-			console.log(pages);
-
 			for (let page in pages) {
 				let id = pages[page]["pageid"],
 					thumbnail = pages[page]["thumbnail"] ? pages[page]["thumbnail"]["source"] : "",
@@ -55,8 +53,7 @@ const performJSONP = (query) => {
 
 				wikiCardsList.push({ id: id, title: title, body: body, thumbnail: thumbnail });
 			}
-
-			console.log(wikiCardsList);
+			
 			createWikiCards(wikiCardsList);
 		}
 	});
